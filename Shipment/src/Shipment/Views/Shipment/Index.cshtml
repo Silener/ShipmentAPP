@@ -1,0 +1,73 @@
+@using ShipmentCommonClasses.Enums
+@using X.PagedList.Mvc.Core;
+@using X.PagedList;
+@using X.PagedList.Web.Common
+
+@model StaticPagedList<ShipmentCommonClasses.Dtos.ShipmentListData>
+
+@{
+    ViewData["Title"] = "Shipment";
+    ViewBag.Title = "Index";
+}
+
+<h1>Shipments List</h1>
+<br>
+<form asp-action="Index" method="get">
+    Status Filter: @Html.DropDownListFor(m => m.First().shipmentStatus,
+    Html.GetEnumSelectList(typeof(ShipmentStatus)))
+    <input type="submit" value="Filter" />
+    <hr />
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().receiverName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().receiverAddress)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().packagesCount)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.receiverName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.receiverAddress)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.packagesCount)
+                    </td>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@item.shipmentId">Details</a>
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+</form>
+
+</table>
+<br />
+<nav>
+    @Html.PagedListPager(Model, page => Url.Action("index", new { page = page }), new PagedListRenderOptions()
+    {
+    ActiveLiElementClass = "active",
+    PageClasses = new[]{ "page-link"},
+    LiElementClasses=new[] { "page-item" },
+    UlElementClasses = new[] { "pagination","justify-content-center", "mt-3" },
+    LinkToNextPageFormat = "Next",
+    LinkToPreviousPageFormat = "Previous",
+    MaximumPageNumbersToDisplay = 5,
+    DisplayLinkToPreviousPage = PagedListDisplayMode.Always,
+    DisplayLinkToNextPage = PagedListDisplayMode.Always
+    })
+</nav>
