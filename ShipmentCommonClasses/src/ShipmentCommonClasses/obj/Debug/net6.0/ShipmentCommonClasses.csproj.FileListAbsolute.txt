@@ -1,0 +1,12 @@
+C:\Users\silen\ShipmentCommonClasses\src\ShipmentCommonClasses\bin\Debug\net6.0\ShipmentCommonClasses.deps.json
+C:\Users\silen\ShipmentCommonClasses\src\ShipmentCommonClasses\bin\Debug\net6.0\ShipmentCommonClasses.dll
+C:\Users\silen\ShipmentCommonClasses\src\ShipmentCommonClasses\bin\Debug\net6.0\ShipmentCommonClasses.pdb
+C:\Users\silen\ShipmentCommonClasses\src\ShipmentCommonClasses\obj\Debug\net6.0\ShipmentCommonClasses.csproj.AssemblyReference.cache
+C:\Users\silen\ShipmentCommonClasses\src\ShipmentCommonClasses\obj\Debug\net6.0\ShipmentCommonClasses.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\silen\ShipmentCommonClasses\src\ShipmentCommonClasses\obj\Debug\net6.0\ShipmentCommonClasses.AssemblyInfoInputs.cache
+C:\Users\silen\ShipmentCommonClasses\src\ShipmentCommonClasses\obj\Debug\net6.0\ShipmentCommonClasses.AssemblyInfo.cs
+C:\Users\silen\ShipmentCommonClasses\src\ShipmentCommonClasses\obj\Debug\net6.0\ShipmentCommonClasses.csproj.CoreCompileInputs.cache
+C:\Users\silen\ShipmentCommonClasses\src\ShipmentCommonClasses\obj\Debug\net6.0\ShipmentCommonClasses.dll
+C:\Users\silen\ShipmentCommonClasses\src\ShipmentCommonClasses\obj\Debug\net6.0\refint\ShipmentCommonClasses.dll
+C:\Users\silen\ShipmentCommonClasses\src\ShipmentCommonClasses\obj\Debug\net6.0\ShipmentCommonClasses.pdb
+C:\Users\silen\ShipmentCommonClasses\src\ShipmentCommonClasses\obj\Debug\net6.0\ref\ShipmentCommonClasses.dll
